@@ -9,14 +9,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #3c6e71;
+    font-family: Helvetica, sans-serif;
 }
 
 .container{
-    width: 250px;
+    width: 300px;
     height: 400px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    border: solid 3px black;
+    border: solid 3px #284b63;
+    border-radius: 20px;
+    background-color: #353535;
 }
 
 .row {
@@ -24,6 +29,48 @@ body{
     display: flex;
 }
 
+.display{
+    background-color: #d9d9d9;
+    color: #284b63;
+    width: 100%;
+    height: 32px;
+    padding: 10px;
+    text-align: end;
+    font-size: 32px;
+    border-radius: 10px;
+}
+
 .row button{
-    flex:1 1 auto;
+    flex:1;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    margin: 5px;
+    padding:0.3em 1.2em;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color:#284b63;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+
+}
+
+.row button:hover{
+    border-color: rgba(255,255,255,1);
+}
+
+.row button.function{
+    background-color: #ff9f1c;
+}
+
+.row button.clear {
+    flex: 3 1 auto;
+    background-color: #999999 ;
+}
+
+.row button.uguale{
+    background-color: #c8553d;
 }
